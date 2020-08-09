@@ -7,8 +7,16 @@ body {
    font-family: 'PT Serif', serif;
 	
 }
+.header{
+	max-width: 1200px: 
+	
+   margin-left: auto;
+   margin-right: auto;
+   padding-left: 1px;
+   padding-right: 1px;
+}
 .container{
-	max-width: 1200px;
+	width: 1200px;
    margin-left: auto;
    margin-right: auto;
    padding-left: 1px;
@@ -24,8 +32,9 @@ body {
 	position: fixed;
 	display: flex;
 	justify-content: space-between;
-	height: 80px;
 	max-width: 1200px;
+	overflow: hidden;
+	height: 80px;
 	z-index: 2;
 	width: 100%;
 
@@ -112,7 +121,9 @@ body {
 
 }
 .header_full_time{
-	display: flex;
+	position: relative;
+	top: 15px;
+	
 
 
 }
@@ -163,7 +174,7 @@ body {
 
 
 .header_slider.slick-initialized.slick-slider{
-	max-width: 1190px;
+	width: 1200px;
 	margin: 0 auto;
 
 	
@@ -193,7 +204,7 @@ body {
 	background-image: url(../img/Background.jpg);
 	max-height: 700px;
 	min-height: 620px;
-	max-width: 1198px;
+	
 	margin: 0 auto;
 	padding-bottom: 100px;
 	
@@ -202,7 +213,7 @@ body {
 .body_slider_border{
 	border: 10px solid #eeeeee;
 	position: relative;
-	max-width: 1160px;
+	max-width: 1180px;
 	height: 490px;
    margin: 0 auto;
    width: 100%;
@@ -216,9 +227,9 @@ body {
 
 
 }
-.body_slider_text{
-	margin: 47px 702px 41px 50px;
-	
+.body_slider_text{ 
+	position: relative;
+
 	
 
 }
@@ -229,8 +240,9 @@ font-weight: bold;
 font-size: 48px;
 line-height: 62px;
 color: #000000;
-margin-right: 52px;
-margin-bottom: 350px;
+left: 45px;
+top:100xp;
+margin-top: 20px;
 position: absolute;
 }
 
@@ -241,9 +253,9 @@ font-weight: normal;
 position: absolute;
 font-size: 16px;
 line-height: 24px;
-max-width: 385px;
-max-height: 128px;
-top: 125px;
+width: 385px;
+height: 128px;
+top: 110px;
 right: 724px;
 bottom: 267px;
 left: 50px;
@@ -264,7 +276,7 @@ color: #808080;
 position: absolute;
 max-width: 189px;
 max-height: 48px;
-top: 271px;
+top: 240px;
 right: 921px;
 bottom: 181px;
 left: 50px;
@@ -278,7 +290,9 @@ font-size: 12px;
 line-height: 16px;
 color: #808080;
 position: absolute;
-top: 331px;
+width: 120px;
+height: 50px;
+top: 310px;
 right: 938px;
 bottom: 41px;
 left: 50px;
@@ -287,9 +301,10 @@ padding-top: 12px;
 
 .body_slider_text_border{
 	position: absolute;
-	margin: 245px 215px 93px  192px;
-	border: 1px solid #eeeeee;
-	height: 95px;
+	top: 265px;
+	left: 230px;
+	border: 0.5px solid #eeeeee;
+	height: 110px;
 }
 .multi{
 font-family: PT Sans;
@@ -299,7 +314,7 @@ font-size: 22px;
 line-height: 24px;
 color: #808080;
 position: absolute;
-top: 271px;
+top: 240px;
 right: 702px;
 bottom: 181px;
 left: 269px;
@@ -313,15 +328,19 @@ font-weight: normal;
 font-size: 12px;
 line-height: 16px;
 color: #808080;
-padding: 296px 17px 80px 219px;
+position: relative;
+width: 170px;
+height: 60px;
+top: 320px;
+left: 260px;
+
 }
 
 
 	.body_slider_button{
-		
-
-		
-
+		position: relative;
+		right: 220px;
+		top: 370px;
 	}
 
 .body_slider_button_red{
@@ -332,38 +351,34 @@ padding: 296px 17px 80px 219px;
 	background-color: red;
 	color: #ffffff;
 	position: relative;
-	bottom: 61px;
-	right: 150px;
-	padding: 8px 30px;
-	
-	
-	
+	top:-10px;
+	bottom: 40px;
+	padding: 8px 25px;
 	
 }
-.body_slider_button_info{
-font-family: PT Sans;
-font-style: normal;
-font-weight: bold;
-font-size: 14px;
-line-height: 24px;
-text-transform: uppercase;
-position: relative;
-top: 426px;
-right: 790px;
-	bottom: 74px;
-	left: 320;
 
-}
 .body_slider_button_info_arrow{
-	position: absolute;
-	top: 430px;
-	right: 771px;
-	bottom: 74px;
-	left: 360px;
+	display: flex;
+
 }
 
 
 
+.body_slider_button_info_arrow a{
+   display: flex;
+   position: relative;
+  top: 340px;
+  left: 280px;
+  text-transform: uppercase;
+  font-size: 14p;
+  font-family: PT Sans;
+  font-weight: bold;
+
+}
+
+.body_slider_button_info_arrow img{
+	margin-left:20px; 
+}
 .body_info_differentiators_about_us{
 	display: flex;
 	flex-direction: row;
@@ -999,18 +1014,22 @@ margin-top: 34px;
 .menu_btn{ 
 	display: block;
 	position: relative;
-	width: 30px;
-	height: 20px;
+	width: 40px;
+	height: 30px;
+	top:22px;
+	margin-right: 25px;
+
 
 	}
 
 	.menu_btn span{
 		position: absolute;
-		background-color: #ffffff;
+		background-color: red;
+
 		left: 0;
 		width: 100%;
 		height: 2px;
-		top: 9px;
+		top: 14px;
 	}
 
 .menu_btn::before,
@@ -1032,16 +1051,25 @@ margin-top: 34px;
 
 
 .header_items{ display: flex;
+	justify-content: space-between;
 
 }
+.header_items div:nth-child(1){
+	order: 2;
+
+}
+
+.header_items div:nth-child(6){
+	order: 3;
+
+}
+
 .header_logo{ 
-	;
+	
 }
 
-.search{ 
-	display: flex;
-	margin-left: -240px;
-	margin-top: 27px;
+.search{ position: relative;
+	left: -40px;
+	
  }
 
-}
